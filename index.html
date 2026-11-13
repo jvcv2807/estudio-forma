@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Estúdio Forma — Arquitetura & Design de Interiores</title>
+  <meta name="description" content="Estúdio Forma: Arquitetura e design de interiores contemporâneo. Espaços que fazem sentido, do conceito ao detalhe. Projetos residenciais, comerciais e consultorias express.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23c28859'/><text x='50%' y='63%' font-size='52' text-anchor='middle' fill='%23ffffff' font-family='serif'>F</text></svg>">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="#inicio" class="brand">
+        <span class="brand-name serif">Estúdio Forma</span>
+        <span class="brand-desc">Arquitetura & Design de Interiores</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#projetos">Projetos</a>
+        <a href="#filosofia">Filosofia</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeBtn" class="theme-btn" aria-label="Alternar tema claro/escuro" type="button">
+          <span id="themeIcon" aria-hidden="true">🌙</span>
+        </button>
+        <a href="#contato" class="btn btn-outline" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Iniciar Briefing</a>
+        <button id="menuBtn" class="theme-btn" aria-label="Menu mobile" type="button" style="display: none;">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu Mobile Dropdown -->
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#projetos">Projetos</a>
+      <a href="#filosofia">Filosofia</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#simulador">Simulador</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-badge">
+            <span style="display:inline-block; width:8px; height:8px; background:var(--accent); border-radius:50%;"></span>
+            ARQUITETURA & DESIGN DE INTERIORES
+          </div>
+          <h1 class="hero-title serif">
+            Espaços que<br>fazem <em>sentido.</em>
+          </h1>
+          <p class="hero-lead">
+            Desenvolvemos ambientes que combinam conforto térmico, luz natural, materiais nobres e funcionalidade prática. Do conceito inicial ao detalhe executivo.
+          </p>
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary">Ver Portfólio de Obras</a>
+            <a href="#simulador" class="btn btn-outline">Simular Estimativa</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <strong>+45</strong>
+              <span>Projetos entregues</span>
+            </div>
+            <div class="stat-item">
+              <strong>98%</strong>
+              <span>Aprovação na 1ª fase</span>
+            </div>
+            <div class="stat-item">
+              <strong>08 anos</strong>
+              <span>De atuação autoral</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-gallery">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80" alt="Ambiente minimalista e elegante assinado pelo Estúdio Forma" class="hero-main-img" loading="eager">
+          <div class="hero-card-float">
+            <p class="serif" style="font-size: 1.15rem;">Residência Jardim Paulistano</p>
+            <span>PROJETO CONCLUÍDO • 240M²</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILOSOFIA / SOBRE -->
+    <section class="philosophy" id="filosofia">
+      <div class="container">
+        <div class="philosophy-grid">
+          <div class="philosophy-copy">
+            <div class="section-head">
+              <span class="eyebrow">ESSÊNCIA AUTORAL</span>
+              <h2 class="section-title serif">Design calmo para a vida contemporânea.</h2>
+              <p class="section-subtitle">
+                Acreditamos que uma casa ou espaço comercial não deve ser um museu intocável, mas um refúgio acolhedor que simplifica a rotina e inspira bem-estar diário.
+              </p>
+            </div>
+
+            <div class="philosophy-points">
+              <div class="point-item">
+                <span class="point-number serif">01</span>
+                <div>
+                  <h4 style="font-size:1.15rem; margin-bottom:0.4rem; color:var(--text-main);">Luz Natural & Biofilia</h4>
+                  <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.6;">Projetamos fluxos de ventilação cruzada e aberturas estratégicas para trazer o verde e a luz do sol para dentro.</p>
+                </div>
+              </div>
+
+              <div class="point-item">
+                <span class="point-number serif">02</span>
+                <div>
+                  <h4 style="font-size:1.15rem; margin-bottom:0.4rem; color:var(--text-main);">Materiais Nobres & Duráveis</h4>
+                  <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.6;">Madeiras de manejo certificado, linho puro, pedras brasileiras e metais acetinados que envelhecem com beleza.</p>
+                </div>
+              </div>
+
+              <div class="point-item">
+                <span class="point-number serif">03</span>
+                <div>
+                  <h4 style="font-size:1.15rem; margin-bottom:0.4rem; color:var(--text-main);">Rigor Executivo Sem Surpresas</h4>
+                  <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.6;">Caderno técnico minucioso de marcenaria, elétrica e hidráulica para sua obra transcorrer com orçamento previsível.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="philosophy-img">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="Detalhe de marcenaria e iluminação indireta" style="width:100%; height:100%; object-fit:cover; border-radius:var(--radius-md);" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS SELECIONADOS -->
+    <section class="projects" id="projetos">
+      <div class="container">
+        <div class="section-head" style="text-align: center; max-width: 680px; margin: 0 auto 3.5rem;">
+          <span class="eyebrow">PORTFÓLIO DE PROJETOS</span>
+          <h2 class="section-title serif">Obras que refletem identidades únicas.</h2>
+          <p class="section-subtitle">
+            Explore nossos projetos residenciais, espaços corporativos e consultorias recentes. Cada projeto é concebido a partir de um diagnóstico profundo do estilo de vida do cliente.
+          </p>
+        </div>
+
+        <!-- Barra de Filtros -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all" type="button">Todos os Projetos</button>
+          <button class="filter-btn" data-filter="residencial" type="button">Residencial</button>
+          <button class="filter-btn" data-filter="comercial" type="button">Comercial</button>
+          <button class="filter-btn" data-filter="consultoria" type="button">Consultoria Express</button>
+        </div>
+
+        <!-- Grid de Projetos -->
+        <div class="projects-grid">
+          <!-- Card 1 -->
+          <article class="project-card" data-category="residencial" data-detail="Apartamento de 180m² totalmente integrado em Pinheiros. Derrubamos paredes divisórias para criar um living amplo que conecta cozinha gourmet, varanda e sala de estar em paleta acolhedora com carvalho americano." data-area="180m²" data-loc="Pinheiros, São Paulo - SP" data-year="2025">
+            <div class="project-thumb">
+              <span class="project-tag">Residencial</span>
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Living integrado Residência Pinheiros" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title serif">Apartamento Pinheiros</h3>
+              <p class="project-desc">Integração total do living e cozinha com marcenaria sob medida e iluminação zenital difusa.</p>
+              <div class="project-meta">
+                <span>180 m² • São Paulo</span>
+                <button class="btn btn-outline open-project-btn" type="button" style="padding: 0.45rem 0.9rem; font-size: 0.8rem;">Ver Detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card" data-category="comercial" data-detail="Sede para consultoria financeira boutique na Faria Lima. Layout biofílico com ilhas colaborativas, salas de conferência com isolamento acústico e lounge para recepção de clientes de alta renda." data-area="310m²" data-loc="Av. Faria Lima, SP" data-year="2025/2026">
+            <div class="project-thumb">
+              <span class="project-tag">Comercial</span>
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Escritório corporativo boutique" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title serif">Sede Faria Lima</h3>
+              <p class="project-desc">Espaço corporativo boutique que une sofisticação, conforto acústico e produtividade moderna.</p>
+              <div class="project-meta">
+                <span>310 m² • São Paulo</span>
+                <button class="btn btn-outline open-project-btn" type="button" style="padding: 0.45rem 0.9rem; font-size: 0.8rem;">Ver Detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="project-card" data-category="residencial" data-detail="Casa de campo térrea com estrutura metálica e pedra bruta. Grandes panos de vidro que emolduram a vista para a mata nativa, piscina de borda infinita e lareira central suspensa." data-area="420m²" data-loc="Itu, Interior de SP" data-year="2024">
+            <div class="project-thumb">
+              <span class="project-tag">Residencial</span>
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Residência Fazenda Boa Vista" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title serif">Refúgio Boa Vista</h3>
+              <p class="project-desc">Casa térrea com pedra local, madeira freijó e total conexão sensorial com a natureza ao redor.</p>
+              <div class="project-meta">
+                <span>420 m² • Itu - SP</span>
+                <button class="btn btn-outline open-project-btn" type="button" style="padding: 0.45rem 0.9rem; font-size: 0.8rem;">Ver Detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="project-card" data-category="consultoria" data-detail="Intervenção rápida sem demolição pesada para jovem casal. Repaginação completa de pintura com cores terrosas, troca de luminárias por pontos de LED indiretos, novos tapetes e consultoria de arte contemporânea." data-area="95m²" data-loc="Vila Madalena, SP" data-year="2026">
+            <div class="project-thumb">
+              <span class="project-tag">Consultoria</span>
+              <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Consultoria Express Vila Madalena" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title serif">Loft Vila Madalena</h3>
+              <p class="project-desc">Transformação em 3 semanas focada em curadoria de mobiliário solto, iluminação e texturas.</p>
+              <div class="project-meta">
+                <span>95 m² • Vila Madalena</span>
+                <button class="btn btn-outline open-project-btn" type="button" style="padding: 0.45rem 0.9rem; font-size: 0.8rem;">Ver Detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="project-card" data-category="comercial" data-detail="Café de cafés especiais com torrefação artesanal. Balcão de concreto aparente moldado in loco, banquetas em couro vegetal e jardim vertical nos fundos." data-area="120m²" data-loc="Jardins, SP" data-year="2025">
+            <div class="project-thumb">
+              <span class="project-tag">Comercial</span>
+              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Café Orgânico Jardins" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title serif">Origem Café Especial</h3>
+              <p class="project-desc">Atmosfera industrial elegante com concreto queimado, latão escovado e acolhimento sensorial.</p>
+              <div class="project-meta">
+                <span>120 m² • Jardins</span>
+                <button class="btn btn-outline open-project-btn" type="button" style="padding: 0.45rem 0.9rem; font-size: 0.8rem;">Ver Detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="project-card" data-category="residencial" data-detail="Reforma completa de cobertura duplex com terraço panorâmico. Espaço gourmet protegido por pergolado bioclimático, spa aquecido e suíte com closet integrado." data-area="290m²" data-loc="Itaim Bibi, SP" data-year="2025">
+            <div class="project-thumb">
+              <span class="project-tag">Residencial</span>
+              <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Cobertura duplex Itaim Bibi" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title serif">Cobertura Itaim Bibi</h3>
+              <p class="project-desc">Espaço social aberto com terraço gourmet, spa externo e vista livre para o skyline da cidade.</p>
+              <div class="project-meta">
+                <span>290 m² • Itaim Bibi</span>
+                <button class="btn btn-outline open-project-btn" type="button" style="padding: 0.45rem 0.9rem; font-size: 0.8rem;">Ver Detalhes</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL DE PROJETO -->
+    <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-content">
+        <button id="modalClose" class="modal-close" type="button" aria-label="Fechar janela">✕</button>
+        <div class="modal-body">
+          <div class="modal-img-wrap">
+            <img id="modalImg" src="" alt="Foto ampliada do projeto">
+          </div>
+          <h3 id="modalTitle" class="serif">Título do Projeto</h3>
+          
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item">
+              <small>Metragem</small>
+              <strong id="modalArea">—</strong>
+            </div>
+            <div class="modal-meta-item">
+              <small>Localização</small>
+              <strong id="modalLoc">—</strong>
+            </div>
+            <div class="modal-meta-item">
+              <small>Ano</small>
+              <strong id="modalYear">—</strong>
+            </div>
+          </div>
+
+          <p id="modalDesc" class="modal-desc-text">Descrição detalhada do projeto.</p>
+          
+          <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+            <a href="#contato" class="btn btn-primary" onclick="document.getElementById('projectModal').style.display='none';">Quero um projeto semelhante</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVIÇOS DO ESTÚDIO -->
+    <section class="services" id="servicos">
+      <div class="container">
+        <div class="section-head" style="text-align: center; max-width: 650px; margin: 0 auto 3.5rem;">
+          <span class="eyebrow">MODALIDADES DE ATENDIMENTO</span>
+          <h2 class="section-title serif">Como podemos trabalhar juntos.</h2>
+          <p class="section-subtitle">
+            Seja para construir do zero, renovar um apartamento existente ou apenas revitalizar a decoração e marcenaria.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <span class="service-icon">📐</span>
+            <h3 class="service-title serif">Projeto Arquitetônico Completo</h3>
+            <p class="service-desc">Da planta de layout ao caderno executivo completo. Ideal para quem comprou na planta ou vai reformar todo o imóvel.</p>
+            <ul class="service-items">
+              <li>Estudo Preliminar & Modelagem 3D fotorrealista</li>
+              <li>Planta de demolição, construção e pontos elétricos</li>
+              <li>Detalhamento completo de marcenaria e marmoraria</li>
+              <li>Memorial descritivo de compras e especificações</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <span class="service-icon">⚡</span>
+            <h3 class="service-title serif">Consultoria de Interiores Express</h3>
+            <p class="service-desc">Solução rápida para renovar ambientes pontuais sem necessidade de grandes quebra-quebras e obras civis.</p>
+            <ul class="service-items">
+              <li>Diagnóstico online ou presencial de 2 horas</li>
+              <li>Painel semântico (Moodboard) de cores e texturas</li>
+              <li>Guia de compras com links diretos de mobiliário</li>
+              <li>Plano de ação e disposição de quadros e iluminação</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <span class="service-icon">🏗️</span>
+            <h3 class="service-title serif">Acompanhamento Técnico de Obra</h3>
+            <p class="service-desc">Tranquilidade para garantir que cada centímetro desenhado seja fielmente construído pela equipe de obra.</p>
+            <ul class="service-items">
+              <li>Visitas técnicas semanais e alinhamento de empreiteiro</li>
+              <li>Verificação dimensional e conferência de gabaritos</li>
+              <li>Solução imediata de dúvidas técnicas in loco</li>
+              <li>Relatórios fotográficos de evolução do cronograma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ETAPAS DO PROCESSO -->
+    <section class="process">
+      <div class="container">
+        <div class="section-head" style="text-align: center; max-width: 600px; margin: 0 auto 3.5rem;">
+          <span class="eyebrow" style="color: var(--accent-light);">MÉTODO EM 4 PASSOS</span>
+          <h2 class="section-title serif" style="color: #fff;">Do briefing à chave na mão.</h2>
+          <p class="section-subtitle" style="color: rgba(255,255,255,0.7);">
+            Nosso método garante clareza, transparência e controle total de custos e prazos em cada decisão.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <span class="step-num serif">01</span>
+            <h4 class="step-title serif">Briefing & Imersão</h4>
+            <p class="step-desc">Mapeamos seus hábitos, necessidades funcionais, referências visuais e o teto orçamentário desejado para o investimento.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="step-num serif">02</span>
+            <h4 class="step-title serif">Conceito & Estudo 3D</h4>
+            <p class="step-desc">Você passeia virtualmente pelo seu futuro espaço antes de comprar um único prego. Ajustamos até a aprovação 100%.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="step-num serif">03</span>
+            <h4 class="step-title serif">Projeto Executivo</h4>
+            <p class="step-desc">Detalhamos todas as medidas milimétricas para pedreiros, eletricistas, gesseiros e marceneiros trabalharem sem erro.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="step-num serif">04</span>
+            <h4 class="step-title serif">Produção & Entrega</h4>
+            <p class="step-desc">Montagem de mobiliário, produção de arte, tapetes e vegetação. Entregamos a casa limpa, perfumada e pronta para morar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIMULADOR DE PROJETO -->
+    <section class="simulator" id="simulador">
+      <div class="container">
+        <div class="sim-box">
+          <div class="section-head" style="margin-bottom: 2.5rem;">
+            <span class="eyebrow">FERRAMENTA INTERATIVA</span>
+            <h2 class="section-title serif">Simule o Prazo Estimado do seu Projeto</h2>
+            <p class="section-subtitle">
+              Insira o tipo de imóvel e a metragem aproximada para ter uma estimativa do tempo de desenvolvimento do estudo e documentação técnica.
+            </p>
+          </div>
+
+          <div class="sim-grid">
+            <div>
+              <div class="sim-form-group">
+                <label for="simType">Tipo de Espaço / Intervenção</label>
+                <select id="simType">
+                  <option value="residencial" selected>Projeto Residencial Completo</option>
+                  <option value="comercial">Projeto Comercial / Corporativo</option>
+                  <option value="consultoria">Consultoria de Interiores Express</option>
+                </select>
+              </div>
+
+              <div class="sim-form-group">
+                <label for="simArea">Área aproximada (m²)</label>
+                <input type="number" id="simArea" value="85" min="20" max="1500" step="5">
+              </div>
+
+              <div class="sim-form-group">
+                <label for="simRooms">Número de Ambientes a Reformar</label>
+                <input type="number" id="simRooms" value="3" min="1" max="25" step="1">
+              </div>
+            </div>
+
+            <div class="sim-card-result">
+              <h4>Prazo Médio de Projeto</h4>
+              <strong id="simOutputTime" class="serif">4 a 6 semanas</strong>
+              <p id="simOutputSummary">Projeto Residencial com aproximadamente 85m² e 3 ambientes. Inclui estudo preliminar 3D, especificações executivas de marcenaria, iluminação e detalhamento completo de acabamentos.</p>
+              
+              <div style="margin-top: 1.8rem;">
+                <a href="#contato" class="btn btn-primary" style="width: 100%; justify-content: center;">Solicitar Proposta Formal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-head" style="text-align: center; max-width: 600px; margin: 0 auto 3rem;">
+          <span class="eyebrow">EXPERIÊNCIAS REAIS</span>
+          <h2 class="section-title serif">O que dizem nossos clientes.</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="test-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"O Estúdio Forma transformou nosso apartamento de 110m² em um santuário. A marcenaria inteligente multiplicou o espaço e cada detalhe foi executado sem estresse na obra."</p>
+            <div class="test-author">
+              <strong>Marina & Carlos Eduardo</strong>
+              <span>Residência Itaim Bibi</span>
+            </div>
+          </div>
+
+          <div class="test-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"Contratamos o projeto para nossa nova sede e o impacto na produtividade e encantamento dos nossos clientes foi imediato. Elegância sem excessos e total cumprimento de prazos."</p>
+            <div class="test-author">
+              <strong>Rodrigo Silveira</strong>
+              <span>Diretor na Vértice Capital</span>
+            </div>
+          </div>
+
+          <div class="test-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"A consultoria express foi a melhor decisão. Em apenas três semanas meu apartamento ganhou vida, iluminação acolhedora e uma identidade que me representa por completo."</p>
+            <div class="test-author">
+              <strong>Heloísa Guimarães</strong>
+              <span>Apartamento Vila Madalena</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO DE CONTATO & BRIEFING -->
+    <section class="contact" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <span class="eyebrow">VAMOS CONVERSAR</span>
+          <h2 class="serif" style="font-size:2.4rem; line-height:1.2; margin-bottom:1.5rem; color:var(--text-main);">
+            Pronto para dar forma ao seu novo espaço?
+          </h2>
+          <p style="color:var(--text-muted); font-size:1rem; line-height:1.7; margin-bottom:2rem;">
+            Preencha os dados do seu projeto ao lado. Nossa equipe de arquitetura analisará seu imóvel e entrará em contato em até 24 horas para agendar sua reunião preliminar.
+          </p>
+
+          <ul class="contact-details">
+            <li>
+              <span style="color:var(--accent);">📍</span>
+              <span>Rua dos Pinheiros, 840 — São Paulo, SP</span>
+            </li>
+            <li>
+              <span style="color:var(--accent);">✉️</span>
+              <span>contato@estudioforma.arq.br</span>
+            </li>
+            <li>
+              <span style="color:var(--accent);">⏰</span>
+              <span>Segunda a Sexta: 09h às 19h</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-form">
+          <form id="formaContactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Seu Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefone">Telefone / Contato</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+              </div>
+              <div class="form-group">
+                <label for="servicoDesejado">Tipo de Serviço</label>
+                <select id="servicoDesejado" name="servico">
+                  <option value="Projeto Residencial">Projeto Residencial Completo</option>
+                  <option value="Projeto Comercial">Projeto Comercial / Corporativo</option>
+                  <option value="Consultoria Express">Consultoria de Interiores</option>
+                  <option value="Acompanhamento de Obra">Acompanhamento de Obra</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Conte-nos sobre o imóvel e seus objetivos</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Ex: Apartamento novo de 90m² na planta com entrega prevista para 3 meses, queremos integrar sala e varanda..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 1rem;">
+              Enviar Solicitação de Briefing
+            </button>
+            <div id="formFeedback" style="display: none; margin-top: 1rem; padding: 1rem; background: var(--bg-muted); border-radius: var(--radius-sm); color: var(--accent-dark); font-size: 0.9rem; text-align: center;"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4 class="serif" style="font-size:1.6rem; color:#fff; margin-bottom:0.5rem;">Estúdio Forma</h4>
+          <p style="color:rgba(255,255,255,0.7); font-size:0.9rem; max-width:320px; line-height:1.6;">
+            Arquitetura e design de interiores contemporâneo. Do conceito ao detalhe para transformar a experiência de viver e trabalhar.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div>
+            <h5 style="color:#fff; font-size:0.9rem; margin-bottom:1rem; text-transform:uppercase; letter-spacing:0.05em;">Navegação</h5>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem;">
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#filosofia">Filosofia</a></li>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#simulador">Simulador</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 style="color:#fff; font-size:0.9rem; margin-bottom:1rem; text-transform:uppercase; letter-spacing:0.05em;">Legal</h5>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem;">
+              <li><a href="#inicio">Termos de Uso</a></li>
+              <li><a href="#inicio">Política de Privacidade</a></li>
+              <li><a href="#inicio">Registro CAU/SP</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Estúdio Forma Arquitetura. Todos os direitos reservados.</p>
+        <p>Desenvolvido por <a href="https://github.com/jvcv2807" target="_blank" rel="noopener noreferrer">João Vitor (jvcv2807)</a> | <a href="https://github.com/jvcv2807/nexoweb" target="_blank" rel="noopener noreferrer">NexoWeb</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
